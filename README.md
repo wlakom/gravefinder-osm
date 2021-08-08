@@ -1,4 +1,4 @@
-gravemap
+gravefinder-osm
 ========
 
 OpenStreetMap Grave Finder
