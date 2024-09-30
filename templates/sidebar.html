@@ -12,8 +12,9 @@
       <div class="aside-body">
       </div>
           <h3>Informacje</h3>
-               <i ng-show="active.tags['name']"> {{active.tags['name']}}</i>         
-          <div class="aside-section aside-tags">
+               <i ng-show="active.tags['name']"> {{active.tags['name']}}</i>   
+           <div i ng-show="active.tags['tomb']"> Rodzaj nagrobka: {{active.tags['tomb']}}</i></div>
+           <div class="aside-section aside-tags">
             <div><a href="{{active.tags.image}}" ng-show="active.tags.image">Zdjęcie grobu</a></div>
           <div ng-show="active.tags.commons">
               <img ng-src="https://commons.wikimedia.org/w/thumb.php?f={{active.tags.commons.substring(5)}}&w=300" alt="Zdjęcie grobu">
@@ -21,11 +22,10 @@
               <div ng-show="active.tags.wikimedia_commons">
               <img ng-src="https://commons.wikimedia.org/w/thumb.php?f={{active.tags.wikimedia_commons.substring(5)}}&w=300" alt="Zdjęcie grobu">
             </div>
-            div ng-show="active.tags['tomb']> Rodzaj nagrobka: {{active.tags['tomb']}}</div>
-      
+    
           <b>Lokalizacja:</b><br>    
              <div>
-            <div <i ng-show="active.tags['sector:name']">- Sektor: {{active.tags['sector:name']}}</i></div>
+              <div i ng-show="active.tags['sector:name']">- Sektor: {{active.tags['sector:name']}}</i></div>
               <div i ng-show="active.tags['sector:row']">- Rząd: {{active.tags['sector:row']}}</i></div>
               <div i ng-show="active.tags['sector:place']">- Miejsce: {{active.tags['sector:place']}}</i></div>
 </ul>
