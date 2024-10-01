@@ -16,8 +16,8 @@
            <div ng-show="active.tags['tomb']">Rodzaj grobu: <i>{{active.tags['tomb']}}</i></div>
            <div class="aside-section aside-tags">
             <div><a href="{{active.tags.image}}" ng-show="active.tags.image">Zdjęcie grobu</a></div>
-          <div ng-show="active.tags.commons">
-              <img ng-src="https://commons.wikimedia.org/w/thumb.php?f={{active.tags.commons.substring(5)}}&w=300" alt="Zdjęcie grobu">
+          <div ng-show="active.tags.image">
+              <img ng-src="{{active.tags.image}}" alt="Zdjęcie grobu">
             </div>
               <div ng-show="active.tags.wikimedia_commons">
               <img ng-src="https://commons.wikimedia.org/w/thumb.php?f={{active.tags.wikimedia_commons.substring(5)}}&w=300" alt="Zdjęcie grobu">
@@ -39,8 +39,8 @@
               <h3 ng-show="person.tags.wikipedia"><a href="https://en.wikipedia.org/wiki/{{person.tags.wikipedia}}" target="_blank">{{person.name}}</a></h3>
               <div ng-show="person.tags.family_name">Nazwisko rodowe: {{person.tags.family_name}}</div>
            <div><a href="{{person.tags.image}}" ng-show="person.tags.image">Zdjęcie</a></div>
-          <div ng-show="person.tags.commons">
-              <img ng-src="https://commons.wikimedia.org/w/thumb.php?f={{person.tags.commons.substring(5)}}&w=300" alt="Zdjęcie">
+          <div ng-show="person.tags.image">
+              <img ng-src="{{person.tags.image}}" alt="Zdjęcie">
             </div>
                <div ng-show="person.tags.wikimedia_commons">
               <img ng-src="https://commons.wikimedia.org/w/thumb.php?f={{person.tags.wikimedia_commons.substring(5)}}&w=300" alt="Zdjęcie">
