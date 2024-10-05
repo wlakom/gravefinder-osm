@@ -15,10 +15,16 @@
                <ng-show="active.tags['name']"><i> {{active.tags['name']}}</i>   
            <div ng-show="active.tags['tomb']">Rodzaj grobu: <i>{{active.tags['tomb']}}</i></div>
            <div class="aside-section aside-tags">
+             
             <div><a href="{{active.tags['image']}}" ng-show="active.tags['image']">Zdjęcie grobu - {{active.tags['image']}}</a></div>
           <div ng-show="active.tags['image']}}">
-<!--              <img ng-src="{{active.tags['image']}}" alt="Zdjęcie grobu"> -->
+              <img ng-src="{{active.tags['image']}}" alt="Zdjęcie grobu"> 
             </div>
+             
+              <div ng-show="active.tags['flickr']">
+              <img ng-src="{{active.tags['flickr']}}" alt="Zdjęcie grobu"> 
+            </div> 
+             
               <div ng-show="active.tags.wikimedia_commons">
               <img ng-src="https://commons.wikimedia.org/w/thumb.php?f={{active.tags.wikimedia_commons.substring(5)}}&w=300" alt="Zdjęcie grobu">
             </div>   
