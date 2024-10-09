@@ -40,7 +40,7 @@
           <hr/>
           <div class="aside-section aside-tags">
             <div ng-repeat="person in active.people">
-              <h3  ng-hide="person.tags.wikipedia">{{person.name}}</h3> zd. <i></i><h4 {{person.tags.family_name}}</h4></i>
+              <h3  ng-hide="person.tags.wikipedia">{{person.name}}</h3>
               <h3 ng-show="person.tags.wikipedia"><a href="https://en.wikipedia.org/wiki/{{person.tags.wikipedia}}" target="_blank">{{person.name}}</a></h3>
               <div ng-show="person.tags.family_name">Nazwisko rodowe: {{person.tags.family_name}}</div>
               
