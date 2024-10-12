@@ -12,7 +12,7 @@
       <div class="aside-body">
       </div>
           <h3>Informacje</h3>
-               <ng-show="active.tags['name']"><i> {{active.tags['name']}}</i>   
+               <ng-show="active.tags['name']"><h3><i> {{active.tags['name']}}</i></h3> 
            <div class="aside-section aside-tags">
              
              <div ng-show="active.tags.wikimedia_commons">
@@ -39,8 +39,8 @@
           <hr/>
           <div class="aside-section aside-tags">
             <div ng-repeat="person in active.people">
-              <h3  ng-hide="person.tags.wikipedia">{{person.name}}</h3>
-              <h3 ng-show="person.tags.wikipedia"><a href="https://en.wikipedia.org/wiki/{{person.tags.wikipedia}}" target="_blank">{{person.name}}</a></h3>
+              <h4  ng-hide="person.tags.wikipedia"><b></b>{{person.name}}</b></h4>
+              <h4 ng-show="person.tags.wikipedia"><b></b><a href="https://en.wikipedia.org/wiki/{{person.tags.wikipedia}}" target="_blank">{{person.name}}</a></b></h4>
               <div ng-show="person.tags.family_name">Nazwisko rodowe: {{person.tags.family_name}}</div>
               
              <div><a href="{{person.tags['image']}}" ng-show="person.tags['image']">Zdjęcie zmarłego - {{person.tags['image']}}</a></div>
